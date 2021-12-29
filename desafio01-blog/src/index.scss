@@ -17,4 +17,20 @@
 
 body {
   font-family: 'Lexend Deca', sans-serif;
+  background: #F3F5F7;
+}
+
+.postSection {
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+ 
+  @media (min-width: 768px) {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
 }

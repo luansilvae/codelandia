@@ -1,0 +1,37 @@
+.Card {
+  background: var(--white);
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+
+
+  h1 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #717171;
+  }
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+
+  span {
+    color: #717171;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  svg {
+    color: var(--blue-dark);
+  }
+}
