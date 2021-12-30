@@ -3,7 +3,7 @@
 }
 
 .HeaderWrapper {
-  padding: 48px 20px;
+  padding: 4.8rem 1.8rem;
 
   @media (min-width: 768px) {
     max-width: 900px;
@@ -19,18 +19,18 @@
   span {
     color: var(--white);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 2.4rem;
     font-weight: 400;
   }
 }
 
 .Search {
-  margin-top: 40px;
+  margin-top: 4rem;
   background: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 0 12px;
+  gap: 1.2rem;
+  padding: 0 1.2rem;
   border-radius: 5px;
 
   span {
@@ -43,10 +43,10 @@
     background: none;
     border: none;
     outline: none;
-    font-family: Inter, sans-serif;
-    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
     font-weight: 500;
-    padding: 15px 0;
+    padding: 1.5rem 0;
 
     color: var(--white);
     opacity: 0.5;

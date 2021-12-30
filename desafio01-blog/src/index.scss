@@ -5,32 +5,42 @@
 }
 
 :root {
-  --blue: #3EA1DB;
-  --blue-dark: #574AE8;
-  --white: #FFF;
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
 
   --title: #313131;
-  --text: #B6B6B6;
-  
-  --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  --text: #b6b6b6;
+
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 720px) {
+    font-size: 59.5%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 57.5%;
+  }
 }
 
 body {
-  font-family: 'Lexend Deca', sans-serif;
-  background: #F3F5F7;
+  font: 400 1.6rem "Lexend Deca", sans-serif;
+  background: #f3f5f7;
 }
 
 .postSection {
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 5rem 1.8rem;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 2.5rem;
 
- 
   @media (min-width: 768px) {
     max-width: 900px;
     margin: 0 auto;
   }
-
 }
