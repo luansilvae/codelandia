@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 720px) {
+    font-size: 58.5%;
+  }
+  @media (max-width: 480px) {
+    font-size: 56.5%;
+  }
+}
+
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+  --header-text: #F9F9F9;
+
+  --white: #fff;
+
+  --title: #181818;
+  --text: #030303;
+}
+
+html {
+  scroll-behavior: smooth;
+}

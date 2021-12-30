@@ -1,0 +1,57 @@
+.Container {
+  width: 100%;
+  background-image: url("../../assets/wallpaper.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.TopContent {
+  width: 100%;
+  background: var(--title);
+  text-align: center;
+  padding: 1.8rem;
+
+  span {
+    color: var(--white);
+    font-size: 1.7rem;
+  }
+}
+
+.Brand {
+  width: 100%;
+  background: var(--white);
+  text-align: center;
+  padding: 1.8rem;
+
+  h1 {
+    color: var(--title);
+    font-size: 2.4rem;
+  }
+}
+
+.HeaderContent {
+  padding: 2rem;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    color: var(--header-text);
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+    font-weight: 700;
+  }
+  p {
+    color: var(--header-text);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 180%;
+    margin-top: 12px;
+  }
+}
