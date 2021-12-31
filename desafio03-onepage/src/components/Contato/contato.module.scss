@@ -21,6 +21,7 @@
       line-height: 2rem;
       color: var(--text);
       padding: 2rem 1rem;
+      resize: vertical;
     
       &::placeholder {
         color: var(--input);
