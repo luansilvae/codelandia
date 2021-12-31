@@ -1,3 +1,4 @@
+import Contato from "./components/Contato";
 import Header from "./components/Header";
 import Posts from "./components/Posts";
 
@@ -6,6 +7,7 @@ function App() {
     <main>
       <Header />
       <Posts />
+      <Contato />
     </main>
   );
 }

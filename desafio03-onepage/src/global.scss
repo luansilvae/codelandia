@@ -1,7 +1,7 @@
 /*Variáveis*/
 :root {
   --buttonColor: #6c63ff;
-  --background: #D7D5FF;
+  --background: #d7d5ff;
   --white: #ffffff;
   --white-300: #f9f9f9;
   --title: #2b2b2b;
@@ -32,8 +32,11 @@ body {
   background: var(--background);
 }
 
-body, input, button, textarea {
-  font-family: 'Lato', sans-serif;
+body,
+input,
+button,
+textarea {
+  font-family: "Lato", sans-serif;
 }
 
 h1,
@@ -42,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
   margin: 0;
   color: var(--title);
 }
@@ -59,8 +62,10 @@ a {
 }
 
 button,
-input {
+input,
+textarea {
   border: 0;
+  outline: none;
 }
 
 button:focus,

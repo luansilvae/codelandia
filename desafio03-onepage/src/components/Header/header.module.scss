@@ -61,5 +61,12 @@
     border-radius: 5px;
     padding: 1.4rem 5rem;
     margin-top: 3.2rem;
+
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      filter: opacity(90%);
+    }
   }
 }
