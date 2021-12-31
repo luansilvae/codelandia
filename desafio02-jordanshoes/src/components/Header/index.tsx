@@ -1,12 +1,11 @@
 import React from "react";
+import BlackBar from "../BlackBar";
 import style from "./header.module.scss";
 
 const Header: React.FC = () => {
   return (
     <div className={style.Container}>
-      <div className={style.TopContent}>
-        <span>Ganhe R$ 10,00 de desconto no frete</span>
-      </div>
+      <BlackBar title="Ganhe R$ 10,00 de desconto no frete"/>
 
       <div className={style.Brand}>
         <h1>JordanShoes</h1>
