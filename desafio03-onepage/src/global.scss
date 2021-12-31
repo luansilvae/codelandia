@@ -1,0 +1,68 @@
+/*Variáveis*/
+:root {
+  --buttonColor: #6c63ff;
+  --background: #D7D5FF;
+  --white: #ffffff;
+  --white-300: #f9f9f9;
+  --title: #2b2b2b;
+  --text: #555555;
+  --input: rgba(110, 114, 117, 0.74);
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 720px) {
+    font-size: 57.5%;
+  }
+  @media (max-width: 480px) {
+    font-size: 55.5%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--background);
+}
+
+body, input, button, textarea {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', sans-serif;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: 0;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}

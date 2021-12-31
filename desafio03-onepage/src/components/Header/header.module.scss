@@ -1,0 +1,65 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 9rem;
+  padding: 7.5rem 2rem;
+
+  img {
+    max-width: 50rem;
+    height: auto;
+    display: block;
+  }
+
+  @media (min-width: 480px) {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+
+    img {
+      max-width: 30rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1400px;
+
+    .Top {
+      max-width: 40rem;
+    }
+
+    img {
+      max-width: 50rem;
+    }
+  }
+}
+
+.Top {
+  h1 {
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 4.7rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    color: var(--text);
+    margin-top: 1.5rem;
+  }
+
+  button {
+    background: var(--buttonColor);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2rem;
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+    border-radius: 5px;
+    padding: 1.4rem 5rem;
+    margin-top: 3.2rem;
+  }
+}
