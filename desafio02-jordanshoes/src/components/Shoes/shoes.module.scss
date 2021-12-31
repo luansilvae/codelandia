@@ -1,20 +1,46 @@
 .Card {
   background: var(--bgCard);
   display: flex;
-  justify-content:center;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 280px;
+  padding: 2rem;
   overflow: hidden;
   cursor: pointer;
- 
+
+  &:hover > span {
+    display: block;
+  }
+
   img {
     width: 250px;
     height: 150px;
-   
     transition: all 400ms ease-in-out;
 
     &:hover {
       transform: scale(1.3);
     }
+  }
+
+  span {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+    display: none;
+    animation: fade 1s;
+    color: #474747;
+    line-height: 2.5rem;
+  }
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1.5;
   }
 }

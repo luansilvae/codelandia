@@ -16,7 +16,7 @@ const Destaques: React.FC = () => {
       <div className={style.Grid}>
         {
           shoes.map((shoe, index) => (
-            <Shoes key={index} url={shoe.url} />
+            <Shoes key={index} url={shoe.url} name={shoe.name} />
           ))
         }
       </div>
