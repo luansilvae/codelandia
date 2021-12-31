@@ -18,7 +18,7 @@ html {
 }
 
 :root {
-  --bgSite: #f6f6f6;
+  --bgSite: #f9f9f9;
   --bgCard: #ebe9ea;
   --header-text: #F9F9F9;
 
@@ -30,4 +30,8 @@ html {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bgSite);
 }

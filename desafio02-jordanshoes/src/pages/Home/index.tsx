@@ -1,9 +1,11 @@
 import React from "react";
+import Destaques from "../../components/Destaques";
 
 const Home: React.FC = () => {
   return (
-    <div>
-    </div>
+    <>
+      <Destaques />
+    </>
   );
 };
 
