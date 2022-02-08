@@ -31,7 +31,11 @@ li, a {
   text-decoration: none;
 }
 
+h1, h2, h3, p, span, button, a {
+  color: var(--white)
+}
+
 body {
-  height: 100vh;
   background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+  min-height: 100vh;
 }

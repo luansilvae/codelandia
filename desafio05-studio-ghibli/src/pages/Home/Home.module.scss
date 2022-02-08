@@ -1,0 +1,74 @@
+.MainContent {
+  height: 100%;
+  padding: 20px 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  .Illustration {
+    width: 100%;
+    max-width: 500px;
+
+    animation: bounce;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.Intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .Title {
+    display: flex;
+    flex-direction: column-reverse;
+
+    h1 {
+      font-size: 5.6rem;
+      line-height: 6rem;
+      font-weight: 900;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+  }
+
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    margin-top: 5px;
+  }
+
+  .ButtonsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5rem;
+
+   img {
+     width: 100%;
+   }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
