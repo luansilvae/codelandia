@@ -16,6 +16,7 @@
     flex-direction: row-reverse;
     gap: 2rem;
     justify-content: space-between;
+    overflow: hidden;
 
     .Illustration {
       max-width: 35rem;
@@ -51,6 +52,8 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  animation: fade 1s;
 
   .Title {
     display: flex;
@@ -96,6 +99,17 @@
     img {
       width: 100%;
     }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 

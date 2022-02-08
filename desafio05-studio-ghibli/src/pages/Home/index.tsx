@@ -19,7 +19,7 @@ const Home: React.FC = () => {
             alt="A Viagem de Chihiro"
           />
 
-          <div className={style.Intro}>
+          <div className={style.Intro} >
             <div className={style.Title}>
               <h1>A VIAGEM DE CHIHIRO</h1>
               <h2>HAYAO MIYAZAKI</h2>
