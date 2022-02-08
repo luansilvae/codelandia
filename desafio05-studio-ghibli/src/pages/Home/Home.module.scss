@@ -1,16 +1,46 @@
+.Wrapper {
+  @media (min-width: 768px) {
+    height: calc(100vh - 10rem);
+  }
+}
+
 .MainContent {
   height: 100%;
   padding: 20px 25px;
-
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    gap: 2rem;
+    justify-content: space-between;
+
+    .Illustration {
+      max-width: 35rem;
+    }
+
+    .Intro {
+      max-width: 47rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .Illustration {
+      max-width: 50rem;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    max-width: 1300px;
+  }
 
   .Illustration {
     width: 100%;
-    max-width: 500px;
-
     animation: bounce;
     animation-duration: 3.5s;
     animation-iteration-count: infinite;
@@ -30,6 +60,7 @@
       font-size: 5.6rem;
       line-height: 6rem;
       font-weight: 900;
+      max-width: 35rem;
     }
 
     h2 {
@@ -55,9 +86,16 @@
     gap: 1rem;
     margin-top: 5rem;
 
-   img {
-     width: 100%;
-   }
+    @media (min-width: 768px) {
+      flex-direction: row;
+      img {
+        width: 22.25rem;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
   }
 }
 
