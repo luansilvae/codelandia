@@ -1,0 +1,21 @@
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 14px 25px;
+
+  @media(min-width: 1024px) {
+    max-width: 1300px;
+  }
+}
+
+.Links {
+  display: flex;
+  gap: 28px;
+
+  li svg {
+    color: var(--white);
+    font-size: 2rem;
+  }
+}
