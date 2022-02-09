@@ -42,9 +42,7 @@
 
   .Illustration {
     width: 100%;
-    animation: bounce;
-    animation-duration: 3.5s;
-    animation-iteration-count: infinite;
+    animation: bounce 4s infinite;
   }
 }
 
@@ -57,16 +55,14 @@
 
   .Title {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 
-    h1 {
-      font-size: 5.6rem;
-      line-height: 6rem;
-      font-weight: 900;
-      max-width: 35rem;
-    }
+    font-size: 5.6rem;
+    line-height: 6rem;
+    font-weight: 900;
+    max-width: 35rem;
 
-    h2 {
+    span {
       font-weight: 700;
       font-size: 1.8rem;
       line-height: 2.7rem;
@@ -86,18 +82,48 @@
   .ButtonsBox {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-top: 5rem;
+    gap: 2rem;
+    margin-top: 3rem;
 
-    @media (min-width: 768px) {
-      flex-direction: row;
-      img {
-        width: 22.25rem;
+    a {
+      width: 100%;
+      border: 2px solid var(--green);
+      padding: 1rem;
+      -webkit-transform: skew(-15deg);
+      transform: skew(-15deg);
+      transition: all 200ms ease-in-out;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        -webkit-transform: skew(15deg);
+        transform: skew(15deg);
+        text-transform: uppercase;
+
+        svg {
+          font-size: 2rem;
+        }
       }
     }
 
-    img {
-      width: 100%;
+    a:first-child {
+      background: var(--green);
+
+      &:hover {
+        background: var(--green-dark);
+        border-color: var(--green-dark);
+      }
+    }
+
+    a:last-child:hover {
+      border-color: var(--green-dark);
+    }
+
+    @media (min-width: 1080px) {
+      flex-direction: row;
+      gap: 1rem;
     }
   }
 }

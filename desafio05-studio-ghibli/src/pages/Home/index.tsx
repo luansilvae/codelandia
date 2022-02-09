@@ -1,9 +1,8 @@
 import React from "react";
+import { FiPlay } from "react-icons/fi";
 
 import Header from "../../components/Header";
 import illustration from "../../image/ilustracao.png";
-import watchButton from "../../image/botao-1.svg";
-import watchTrailer from "../../image/botao-2.svg";
 
 import style from "./Home.module.scss";
 
@@ -19,11 +18,10 @@ const Home: React.FC = () => {
             alt="A Viagem de Chihiro"
           />
 
-          <div className={style.Intro} >
-            <div className={style.Title}>
-              <h1>A VIAGEM DE CHIHIRO</h1>
-              <h2>HAYAO MIYAZAKI</h2>
-            </div>
+          <div className={style.Intro}>
+            <h1 className={style.Title}>
+              <span>HAYAO MIYAZAKI</span> A VIAGEM DE CHIHIRO
+            </h1>
 
             <span>
               Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles
@@ -32,10 +30,13 @@ const Home: React.FC = () => {
 
             <div className={style.ButtonsBox}>
               <a href="#">
-                <img src={watchButton} alt="Assistir agora" />
+                <span>
+                  {" "}
+                  <FiPlay /> Assistir agora
+                </span>
               </a>
               <a href="#">
-                <img src={watchTrailer} alt="Assistir agora" />
+                <span>Assista ao trailer</span>
               </a>
             </div>
           </div>
