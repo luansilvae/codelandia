@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiClock } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
+import ModalVideo from "react-modal-video";
 
 import Capa from "../../images/capa.png";
 
 import style from "./Home.module.scss";
+import "react-modal-video/scss/modal-video.scss";
 
 const Home: React.FC = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className={style.Container}>
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={isOpen}
+        videoId="xdBWrkcmMwU"
+        onClose={() => setOpen(false)}
+      />
+
       <h1 className={style.Title}>
         <span>ESTÁ DISPONÍVEL AGORA!</span>
         LOKI
@@ -38,8 +49,15 @@ const Home: React.FC = () => {
           </div>
 
           <div className={style.Buttons}>
-            <a href="#">Assistir Agora</a>
-            <a href="#">Trailer</a>
+            <a
+              href="https://www.disneyplus.com/pt-br/series/loki/6pARMvILBGzF"
+              target="_blank"
+            >
+              Assistir Agora
+            </a>
+            <a href="#" onClick={() => setOpen(true)}>
+              Trailer
+            </a>
           </div>
 
           <p className={style.Description}>
