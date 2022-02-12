@@ -1,0 +1,146 @@
+.Container {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+
+  @media(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.Title {
+  font-size: 9rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  span {
+    font-size: 1.8rem;
+  }
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+
+  .Image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: aqua;
+    max-width: 18.4rem;
+
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  .Actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .Time {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: 700;
+        gap: 1rem;
+
+        svg {
+          font-size: 2rem;
+        }
+      }
+
+      span:last-of-type {
+        justify-content: flex-end;
+      }
+    }
+
+    .Stars {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.7rem;
+
+      svg {
+        width: 28px;
+        height: 28px;
+        fill: var(--yellow);
+      }
+    }
+  }
+
+  .Buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    a {
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      background: var(--blue);
+      border-radius: 3px;
+      padding: 1rem 2rem;
+      font-weight: bold;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      line-height: 22px;
+      border: 1px solid var(--blue);
+      color: var(--white);
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+
+    a:last-child {
+      background: var(--black);
+      border-color: var(--white);
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+  }
+
+  .Description {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+}
+
+// MEDIA
+.Info {
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 7rem;
+    max-width: 1300px;
+    margin-top: 5rem;
+
+    .Actions {
+      max-width: 75rem;
+    }
+
+    .Time {
+      max-width: 480px;
+    }
+
+    .Buttons {
+      flex-direction: row;
+    }
+  }
+}

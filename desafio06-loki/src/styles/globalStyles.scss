@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (min-width: 768px) {
+    font-size: 64.5%;
+  }
+  @media (min-width: 1024px) {
+    font-size: 68.5%;
+  }
+}
+
+:root {
+  --white: #fff;
+  --blue: #0072d2;
+  --black: #131318;
+  --yellow: #ffa800;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+span,
+p {
+  font-family: "B612", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+button,
+a {
+  color: var(--white);
+}
+
+body {
+  background-image: url('../images/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
