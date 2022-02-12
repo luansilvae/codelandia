@@ -61,9 +61,7 @@ const Home: React.FC = () => {
           </div>
 
           <p className={style.Description}>
-            Em “Loki” da Marvel Studios, o vilão mercurial Loki (Tom Hiddleston)
-            retoma seu papel como o Deus do Mal em uma nova série que ocorre
-            após os eventos de “Vingadores: Endgame”.
+          Em "Loki", da Marvel Studios, o temperamental vilão Loki (Tom Hiddleston) retoma seu papel como o Deus da Mentira nesta nova série, que ocorre após os eventos de "Vingadores: Ultimato". Kate Herron dirige, e Michael Waldron assina o roteiro.
           </p>
         </div>
       </div>
