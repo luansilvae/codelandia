@@ -132,10 +132,11 @@
 
     .Actions {
       max-width: 75rem;
+      flex-direction: column-reverse;
     }
 
     .Time {
-      max-width: 300px;
+      max-width: 285px;
     }
 
     .Buttons {
