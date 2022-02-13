@@ -29,6 +29,14 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3 h3 {
+  font-family: 'Teko', sans-serif;
+}
+
+span, button, a, p {
+  font-family: 'Roboto', sans-serif;
+}
+
 li,
 a {
   list-style: none;

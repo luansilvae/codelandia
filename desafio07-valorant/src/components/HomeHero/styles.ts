@@ -1,31 +1,30 @@
 import styled from "styled-components";
-
 import ValorantText from "../iconsComponents/ValorantText";
 
 export const Container = styled.div`
   margin-top: 80px;
   width: 100%;
-  height: 490px;
+  height: 500px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (min-width: 1024px) {
+  @media(min-width: 1024px) {
     height: calc(100vh - 80px);
   }
 `;
 
 export const Video = styled.video`
-  position: fixed;
+  position: absolute;
   top: 80px;
   left: 0;
   object-fit: cover;
   width: 100%;
-  min-height: 490px;
+  height: 500px;
 
-  @media (min-width: 1024px) {
-    height: 100vh;
+  @media(min-width: 1024px) {
+    height: calc(100vh - 80px);
   }
 `;
 
@@ -43,27 +42,26 @@ export const Content = styled.div`
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
 
-  @media (min-width: 1024px) {
+  @media(min-width: 1024px) {
     justify-content: center;
     gap: 5rem;
   }
 `;
-
 export const Title = styled.h1`
   display: flex;
   flex-direction: column-reverse;
   gap: 1.8rem;
 
-  span {
+  span { 
     color: var(--white);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.7rem;
     line-height: 1.4;
   }
 
-  @media (min-width: 1024px) {
-    flex-direction: column;
-    gap: 3rem;
+  @media(min-width: 1024px) {
+   flex-direction: column;
+   gap: 3rem;
   }
 `;
 
@@ -77,7 +75,7 @@ export const ValorantLogo = styled(ValorantText)`
 export const Button = styled.button`
   cursor: pointer;
   border: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   background: var(--red);
   color: var(--white);
@@ -87,11 +85,11 @@ export const Button = styled.button`
   font-size: 1.8rem;
   transition: all 200ms ease-in-out;
 
-  @media (min-width: 1024px) {
+  @media(min-width: 1024px) {
     font-size: 1.4rem;
   }
 
-  :hover {
+  :hover{ 
     background: var(--dark);
   }
-`;
+`
