@@ -23,7 +23,7 @@ export const Container = styled.div`
     display: none;
     z-index: 10;
     color: var(--white);
-    padding: 8px;
+    padding: 8px 20px;
     margin: 0;
     font-size: 3rem;
     background: var(--dark);
