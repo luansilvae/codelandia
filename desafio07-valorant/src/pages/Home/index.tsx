@@ -1,18 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import AgentCard from "../../components/AgentCard";
 import Header from "../../components/Header";
 import HomeHero from "../../components/HomeHero";
+import { IAgent } from "../../types/IAgent";
 
-import { Container, Agents, Title } from "./styles";
-
-interface Agents {
-  uuid: string;
-  displayName: string;
-  bustPortrait: string;
-}
+import { Container, Agents, Title, AgentsList } from "./styles";
 
 const Home: React.FC = () => {
-  const [agents, setAgents] = useState<Agents[]>([]);
+  const [agents, setAgents] = useState<IAgent[]>([]);
 
   async function fetchData() {
     const response = await axios.get(
@@ -24,7 +20,7 @@ const Home: React.FC = () => {
   }
 
   useEffect(() => {
-    // fetchData();
+    fetchData();
   }, []);
 
   return (
@@ -44,6 +40,16 @@ const Home: React.FC = () => {
             </p>
           </div>
         </Title>
+
+        <AgentsList>
+          {agents.map((agent) => (
+            <AgentCard
+              key={agent.uuid}
+              displayName={agent.displayName}
+              bustPortrait={agent.bustPortrait}
+            />
+          ))}
+        </AgentsList>
       </Agents>
     </Container>
   );

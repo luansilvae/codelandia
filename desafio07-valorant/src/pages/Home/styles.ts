@@ -57,9 +57,18 @@ export const Title = styled.div`
   }
 
   @media (min-width: 1024px) {
+    margin-top: 30px;
     h2 {
       font-size: 10rem;
       line-height: 7rem;
     }
   }
+`;
+
+export const AgentsList = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
 `;
