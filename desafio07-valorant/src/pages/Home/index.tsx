@@ -25,7 +25,6 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Header />
       <HomeHero />
       <Agents id="agents">
         <Title>
@@ -45,6 +44,7 @@ const Home: React.FC = () => {
           {agents.map((agent) => (
             <AgentCard
               key={agent.uuid}
+              uuid={agent.uuid}
               displayName={agent.displayName}
               bustPortrait={agent.bustPortrait}
             />
