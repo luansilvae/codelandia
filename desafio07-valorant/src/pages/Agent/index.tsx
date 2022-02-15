@@ -26,39 +26,24 @@ const Agent: React.FC = () => {
   }
 
   useEffect(() => {
-    // fetchData();
+    fetchData();
   }, []);
 
   return (
     <Container>
-      <HeaderAgent
-        bgAgent={
-          "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/background.png"
-        }
-      >
+      <HeaderAgent>
         <TopContent>
-          <img
-            src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/fullportrait.png"
-            alt="Agente"
-          />
+          <img src={agentData?.fullPortrait} alt={agentData?.displayName} />
           <AgentBio>
-            <h1>BREACH</h1>
+            <h1>{agentData?.displayName}</h1>
             <h2>// BIOGRAFIA</h2>
-            <p>
-              Criada no coração do México, Reyna domina o combate individual,
-              destacando-se a cada abate efetuado. Sua capacidade só é limitada
-              por sua própria perícia, tornando-a bastante dependente de
-              desempenho.
-            </p>
+            <p>{agentData?.description}</p>
           </AgentBio>
         </TopContent>
         <BottomContent>
           <span>// FUNÇÃO </span>
-          <h1>DUELISTA</h1>
-          <p>
-            niciadores desafiam situações arriscadas, preparando a equipe para
-            entrar em terreno contestado e rechaçar defensores."
-          </p>
+          <h1>{agentData?.role.displayName}</h1>
+          <p>{agentData?.role.description}</p>
         </BottomContent>
       </HeaderAgent>
     </Container>

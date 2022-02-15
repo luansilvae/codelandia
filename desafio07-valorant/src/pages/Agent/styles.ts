@@ -1,40 +1,46 @@
 import styled from "styled-components";
 
-interface HeaderProps {
-  bgAgent: string;
-}
-
 export const Container = styled.div`
-  background: var(--white);
+  @media (min-width: 768px) {
+    background: var(--dark);
+  }
 `;
 
-export const HeaderAgent = styled.header<HeaderProps>`
-  padding-top: 80px;
-  width: 100%;
-  background: var(--dark);
-
+export const HeaderAgent = styled.header`
+  margin: 80px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  background-image: url(${(props) => props.bgAgent});
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-  background-attachment: fixed;
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    max-width: 1300px;
+    padding: 80px 1.6rem;
+    height: 100vh;
+    margin: 0 auto;
+  }
 `;
 
 export const TopContent = styled.div`
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
 
   img {
     width: 100%;
     height: 100%;
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-auto-flow: dense;
+    direction: rtl;
+    grid-template-columns: 60% 40%;
   }
 `;
 
@@ -49,6 +55,7 @@ export const AgentBio = styled.section`
     line-height: 5rem;
     letter-spacing: -2px;
     color: var(--dark);
+    text-transform: uppercase;
   }
 
   h2 {
@@ -67,12 +74,38 @@ export const AgentBio = styled.section`
     color: #768079;
     max-width: 70rem;
   }
+
+  @media (min-width: 768px) {
+    p,
+    h2 {
+      direction: ltr;
+      text-align: right;
+    }
+  }
+
+  @media (min-width: 768px) {
+    background: none;
+    padding: 0;
+    h1,
+    h2,
+    p {
+      color: var(--white);
+    }
+
+    h1 {
+      font-size: 10rem;
+    }
+
+    h2,
+    p {
+      font-size: 1.4rem;
+    }
+  }
 `;
 
 export const BottomContent = styled.section`
-  padding: 0 1.6rem;
+  padding: 0 1.6rem 5rem;
   background: var(--white);
-
   width: 100%;
 
   span {
@@ -92,6 +125,7 @@ export const BottomContent = styled.section`
     margin: 10px 0 30px;
     display: flex;
     flex-direction: column;
+    text-transform: uppercase;
   }
 
   p {
@@ -100,5 +134,24 @@ export const BottomContent = styled.section`
     font-size: 1.7rem;
     color: #768079;
     max-width: 70rem;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 5rem;
+  }
+
+  @media (min-width: 1024px) {
+    background: none;
+    padding: 0;
+    h1,
+    p,
+    span {
+      color: var(--white);
+    }
+
+    span,
+    p {
+      font-size: 1.4rem;
+    }
   }
 `;
