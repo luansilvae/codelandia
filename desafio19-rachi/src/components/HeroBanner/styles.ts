@@ -8,7 +8,7 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     height: calc(100vh - 70px);
   }
 `;
@@ -28,16 +28,17 @@ export const BannerWrapper = styled.div`
     max-width: 500px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     padding: 0;
     max-width: 90%;
     flex-direction: row;
 
     img {
-      width:  50%;
+      width: 50%;
     }
   }
 `;
+
 export const Content = styled.div`
   text-align: center;
 
@@ -51,7 +52,7 @@ export const Content = styled.div`
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 580px) {
+  @media (min-width: 768px) {
     text-align: left;
 
     br {
@@ -60,6 +61,11 @@ export const Content = styled.div`
 
     h1 {
       max-width: 400px;
+
+      @media (min-width: 1024px) {
+        font-size: 4rem;
+        max-width: 600px;
+      }
     }
   }
 `;
@@ -69,8 +75,19 @@ export const Button = styled.button`
   color: var(--white);
   border: none;
   box-shadow: 1px 3px 4px 0px #137de080;
-  padding: 1rem 2rem;
+  padding: 1.1rem 2.5rem;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
+  
+  transition: background-color 200ms ease-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #108fe3;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.7rem;
+  }
 `;
