@@ -5,7 +5,8 @@ import { FiMenu, FiX } from "react-icons/fi";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  width: 100vw;
+  max-width: 100vw;
+  width: 100%;
   height: 70px;
   position: fixed;
   top: 0;

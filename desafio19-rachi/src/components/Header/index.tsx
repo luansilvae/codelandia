@@ -40,7 +40,7 @@ function Navbar() {
 
         <Menu activeToggle={activeToggle}>
           <li>
-            <LinkMenu href="#">Funcionalidades</LinkMenu>
+            <LinkMenu href="#how-it-works">Funcionalidades</LinkMenu>
           </li>
 
           <li>
@@ -61,7 +61,7 @@ function Navbar() {
         {activeToggle && (
           <MobileMenu>
             <li>
-              <LinkMenu href="#">Funcionalidades</LinkMenu>
+              <LinkMenu href="#how-it-works">Funcionalidades</LinkMenu>
             </li>
 
             <li>
