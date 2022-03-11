@@ -3,14 +3,26 @@ import styled, { css } from "styled-components";
 import { FiMenu, FiX } from "react-icons/fi";
 
 export const Container = styled.div`
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
   height: 70px;
-  margin: auto;
-  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  background: var(--background);
+  box-shadow: 0px 10px 16px -4px rgba(0,0,0,0.1);
+`;
+
+export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: 768px) {
     max-width: 90vw;
@@ -34,7 +46,7 @@ export const ToggleButton = styled.button`
 `;
 
 const iconStyle = css`
-  fill: var(--textTitle);
+  color: var(--textTitle);
   width: 32px;
   height: 32px;
 `;
@@ -50,6 +62,7 @@ export const CloseButton = styled(FiX)`
 export const Menu = styled.ul<{ activeToggle: boolean }>`
   display: none;
   gap: 4rem;
+  align-items: center;
 
   @media (min-width: 768px) {
     display: flex;
@@ -88,7 +101,7 @@ export const LinkMenu = styled.a`
 export const MobileMenu = styled.ul`
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   justify-content: center;
   align-items: center;
   gap: 4rem;

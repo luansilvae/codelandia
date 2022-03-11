@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 100vh;
+  margin: 70px 0;
 
   h1, h2 {
     color: var(--textTitle);

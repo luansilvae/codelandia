@@ -1,10 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
+import { render } from "react-dom";
+import App from "./App";
+import { CustomThemeProvider } from "./contexts/CustomThemeProvider";
 
-ReactDOM.render(
-  <React.StrictMode>
+render(
+  <CustomThemeProvider>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+  </CustomThemeProvider>,
+  document.getElementById("root")
+);
