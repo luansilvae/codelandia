@@ -39,6 +39,22 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.6rem; // 16px
     background-color: var(--background);
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  a, button, p, input {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, span {
+    font-family: 'Sora', sans-serif;
+  }
+
+  ul, li {
+    list-style: none;
+  }
 `;
 
 export { GlobalStyles };

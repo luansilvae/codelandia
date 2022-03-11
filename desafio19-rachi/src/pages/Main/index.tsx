@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../../components/Header';
 import { ThemeName } from '../../styles/theme';
 
 import { Container } from './styles';
@@ -11,13 +12,15 @@ interface Props {
 const Main: React.FC<Props> = ({
   themeName, setThemeName
 }) => {
-  function toggleTheme() {
-    setThemeName(themeName === 'light' ? 'dark': 'light')
-  }
+  
+  // function toggleTheme() {
+  //   setThemeName(themeName === 'light' ? 'dark': 'light')
+  // }
 
   return (
     <Container>
-      <button onClick={toggleTheme}>TROCAR TEMA</button>
+      <Header />
+      {/* <button onClick={toggleTheme}>TROCAR TEMA</button> */}
 
       <h1>Hello world</h1>
       <h2>Teste</h2>
