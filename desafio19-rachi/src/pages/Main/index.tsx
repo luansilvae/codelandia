@@ -4,6 +4,7 @@ import { Header } from "../../components/Header";
 import { HeroBanner } from "../../components/HeroBanner";
 import { HowItWorks } from "../../components/HowItWorks";
 import { Pricing } from "../../components/Pricing";
+import { Contact } from "../../components/Contact";
 
 import { Container } from "./styles";
 
@@ -15,6 +16,7 @@ export const Main: React.FC = () => {
       <HowItWorks />
       <AppBanner />
       <Pricing />
+      <Contact />
     </Container>
   );
 };
