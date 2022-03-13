@@ -11,7 +11,7 @@ export const SwitchButton: React.FC = () => {
           id="checkbox"
           type="checkbox"
           onClick={toggleTheme}
-          checked={themeName === "dark"}
+          defaultChecked={themeName === "dark"}
           title="Toggle theme"
           aria-label="Toggle theme"
         />
