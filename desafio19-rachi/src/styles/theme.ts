@@ -7,6 +7,7 @@ export const themes = {
     blue: "#0F9AFE",
     white: "#FFFFFF",
     highlightedCardBackground: "#32394B",
+    highlightedCardHover: "#464F65",
     highlightedCardText: "#DBDBDB",
   },
   dark: {
@@ -17,6 +18,7 @@ export const themes = {
     blue: "#0F9AFE",
     white: "#FFFFFF",
     highlightedCardBackground: "#464F65",
+    highlightedCardHover: "#222736",
     highlightedCardText: "#DBDBDB",
   },
 };

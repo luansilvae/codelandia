@@ -45,13 +45,10 @@ export const Header: React.FC = () => {
             <LinkMenu href="#app-banner">App</LinkMenu>
           </li>
           <li>
-            <LinkMenu href="#">Planos</LinkMenu>
+            <LinkMenu href="#pricing">Planos</LinkMenu>
           </li>
           <li>
-            <LinkMenu href="#">Contato</LinkMenu>
-          </li>
-          <li>
-            <LinkMenu href="#">Contato</LinkMenu>
+            <LinkMenu href="#contact">Contato</LinkMenu>
           </li>
           <SwitchButton />
         </Menu>
@@ -66,10 +63,10 @@ export const Header: React.FC = () => {
               <LinkMenu href="#app-banner">App</LinkMenu>
             </li>
             <li>
-              <LinkMenu href="#">Planos</LinkMenu>
+              <LinkMenu href="#pricing">Planos</LinkMenu>
             </li>
             <li>
-              <LinkMenu href="#">Contato</LinkMenu>
+              <LinkMenu href="#contact">Contato</LinkMenu>
             </li>
             <SwitchButton />
           </MobileMenu>
