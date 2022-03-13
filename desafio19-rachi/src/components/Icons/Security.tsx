@@ -1,6 +1,6 @@
 import React from "react";
 
-function Security(props: React.SVGProps<SVGSVGElement>) {
+export const Security: React.FC = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="46"
@@ -20,6 +20,4 @@ function Security(props: React.SVGProps<SVGSVGElement>) {
       />
     </svg>
   );
-}
-
-export default Security;
+};

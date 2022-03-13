@@ -1,6 +1,8 @@
 import React from "react";
 
-function UserConnection(props: React.SVGProps<SVGSVGElement>, color: string) {
+export const UserConnection: React.FC = (
+  props: React.SVGProps<SVGSVGElement>
+) => {
   return (
     <svg
       width="60"
@@ -14,7 +16,7 @@ function UserConnection(props: React.SVGProps<SVGSVGElement>, color: string) {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M58.75 46.2501C58.75 49.5653 57.433 52.7448 55.0888 55.089C52.7446 57.4332 49.5652 58.7501 46.25 58.7501C42.9348 58.7501 39.7554 57.4332 37.4112 55.089C35.067 52.7448 33.75 49.5653 33.75 46.2501C33.75 42.9349 35.067 39.7555 37.4112 37.4113C39.7554 35.0671 42.9348 33.7501 46.25 33.7501C49.5652 33.7501 52.7446 35.0671 55.0888 37.4113C57.433 39.7555 58.75 42.9349 58.75 46.2501V46.2501Z"
-        stroke={color}
+        stroke="#0F9AFE"
         strokeWidth="3"
         strokeLinejoin="round"
       />
@@ -33,6 +35,4 @@ function UserConnection(props: React.SVGProps<SVGSVGElement>, color: string) {
       />
     </svg>
   );
-}
-
-export default UserConnection;
+};

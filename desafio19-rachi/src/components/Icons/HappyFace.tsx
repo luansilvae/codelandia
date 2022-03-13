@@ -1,6 +1,6 @@
 import React from "react";
 
-function HappyFace(props: React.SVGProps<SVGSVGElement>) {
+export const HappyFace: React.FC = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="50"
@@ -20,5 +20,3 @@ function HappyFace(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-
-export default HappyFace;

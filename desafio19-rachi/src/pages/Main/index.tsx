@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../../components/Header";
-import HeroBanner from "../../components/HeroBanner";
-import HowItWorks from "../../components/HowItWorks";
+import { Header } from "../../components/Header";
+import { HeroBanner } from "../../components/HeroBanner";
+import { HowItWorks } from "../../components/HowItWorks";
 
 import { Container } from "./styles";
 
-const Main: React.FC = () => {
+export const Main: React.FC = () => {
   return (
     <Container>
       <Header />
@@ -14,5 +14,3 @@ const Main: React.FC = () => {
     </Container>
   );
 };
-
-export default Main;

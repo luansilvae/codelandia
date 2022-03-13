@@ -62,7 +62,7 @@ export const CloseButton = styled(FiX)`
 
 export const Menu = styled.ul<{ activeToggle: boolean }>`
   display: none;
-  gap: 4rem;
+  gap: 3.2rem;
   align-items: center;
 
   @media (min-width: 768px) {

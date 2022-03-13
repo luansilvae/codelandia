@@ -1,16 +1,15 @@
 import React from "react";
-import Illustration from "../../assets/img/hero-illustration.svg"
+import Illustration from "../../assets/img/hero-illustration.svg";
 
 import { Container, BannerWrapper, Content, Button } from "./styles";
 
-const HeroBanner: React.FC = () => {
+export const HeroBanner: React.FC = () => {
   return (
     <Container>
       <BannerWrapper>
         <Content>
           <h1>
-            Rachi, <br />
-            é tudo que você precisa em um só lugar.
+            Rachi, <br />é tudo que você precisa em um só lugar.
           </h1>
           <Button>Cadastrar-se</Button>
         </Content>
@@ -19,5 +18,3 @@ const HeroBanner: React.FC = () => {
     </Container>
   );
 };
-
-export default HeroBanner;

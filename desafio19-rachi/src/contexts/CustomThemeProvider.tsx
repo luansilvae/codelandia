@@ -32,8 +32,10 @@ export function CustomThemeProvider(props: CustomThemeProps) {
   }, [themeName]);
 
   const toggleTheme = () => {
-    setThemeName(themeName === "light" ? "dark" : "light");
-    localStorage.setItem("theme", JSON.stringify(themeName === "light" ? "dark" : "light"));
+    const newTheme = themeName === "light" ? "dark" : "light"
+    
+    setThemeName(newTheme);
+    localStorage.setItem("theme", JSON.stringify(newTheme));
   };
 
   return (

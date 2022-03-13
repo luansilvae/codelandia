@@ -1,11 +1,11 @@
 import React from "react";
-import HappyFace from "../Icons/HappyFace";
-import Security from "../Icons/Security";
-import UserConnection from "../Icons/UserConnection";
+import { HappyFace } from "../Icons/HappyFace";
+import { Security } from "../Icons/Security";
+import { UserConnection } from "../Icons/UserConnection";
 
 import { Container, GridContainer, GridItem } from "./styles";
 
-const HowItWorks: React.FC = () => {
+export const HowItWorks: React.FC = () => {
   return (
     <Container id="how-it-works">
       <h2>Como funciona</h2>
@@ -29,5 +29,3 @@ const HowItWorks: React.FC = () => {
     </Container>
   );
 };
-
-export default HowItWorks;

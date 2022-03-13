@@ -2,9 +2,10 @@ import { useContext } from "react";
 import { CustomThemeContext } from "../contexts/CustomThemeProvider";
 
 function useCustomThemeContext() {
-  const { currentTheme, toggleTheme, themeName } = useContext(CustomThemeContext);
+  const { currentTheme, toggleTheme, themeName } =
+    useContext(CustomThemeContext);
 
- return {currentTheme, toggleTheme, themeName}
+  return { currentTheme, toggleTheme, themeName };
 }
 
-export default useCustomThemeContext;
+export { useCustomThemeContext };

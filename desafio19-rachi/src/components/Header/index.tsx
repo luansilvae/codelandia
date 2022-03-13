@@ -9,27 +9,25 @@ import {
   Menu,
   LinkMenu,
   MobileMenu,
-  HeaderWrapper
+  HeaderWrapper,
 } from "./styles";
 
 import LogoLight from "../../assets/img/logo-light.svg";
 import LogoDark from "../../assets/img/logo-dark.svg";
-import useCustomThemeContext from "../../hooks/useCustomTheme";
-import SwitchButton from "../SwitchButton";
+import { useCustomThemeContext } from "../../hooks/useCustomTheme";
+import { SwitchButton } from "../SwitchButton";
 
-function Navbar() {
+export const Header: React.FC = () => {
   const [activeToggle, setActiveToggle] = useState<boolean>(false);
   const { themeName } = useCustomThemeContext();
 
   return (
     <Container>
       <HeaderWrapper>
-        {themeName === "light" ? (
-          <Logo src={LogoLight} alt="Rachi logo" />
-        ) : (
-          <Logo src={LogoDark} alt="Rachi logo" />
-        )}
-
+        <Logo
+          src={themeName === "light" ? LogoLight : LogoDark}
+          alt="Rachi logo"
+        />
         <ToggleButton
           onClick={() => {
             setActiveToggle((state) => !state);
@@ -79,6 +77,4 @@ function Navbar() {
       </HeaderWrapper>
     </Container>
   );
-}
-
-export default Navbar;
+};
