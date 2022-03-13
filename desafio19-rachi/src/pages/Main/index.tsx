@@ -7,6 +7,7 @@ import { Pricing } from "../../components/Pricing";
 import { Contact } from "../../components/Contact";
 
 import { Container } from "./styles";
+import { Footer } from "../../components/Footer";
 
 export const Main: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ export const Main: React.FC = () => {
       <AppBanner />
       <Pricing />
       <Contact />
+      <Footer />
     </Container>
   );
 };

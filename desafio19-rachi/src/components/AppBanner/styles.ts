@@ -33,7 +33,7 @@ export const AppContent = styled.div`
   p {
     line-height: 2.4rem;
     color: var(--textSubtitle);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     max-width: 480px;
   }
 `;

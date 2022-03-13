@@ -5,7 +5,7 @@ import { Container, Wrapper, FormContact, ContactHeader, InputGroup } from "./st
 
 export const Contact: React.FC = () => {
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
         <ContactHeader>
           <h2>Contato</h2>

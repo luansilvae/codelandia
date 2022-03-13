@@ -41,10 +41,10 @@ export const Pricing: React.FC = () => {
 
         <PricingCard className="highlightedCard">
           <PricingCardHeader>
-            <h3>Bronze</h3>
+            <h3>Prata</h3>
             <Button>Preferido</Button>
             <h4>
-              <span>R$</span>28 <span>/mês</span>
+              <span>R$</span>57<span>/mês</span>
             </h4>
           </PricingCardHeader>
 
@@ -58,9 +58,9 @@ export const Pricing: React.FC = () => {
 
         <PricingCard>
           <PricingCardHeader>
-            <h3>Bronze</h3>
+            <h3>Ouro</h3>
             <h4>
-              <span>R$</span>28<span>/mês</span>
+              <span>R$</span>94<span>/mês</span>
             </h4>
           </PricingCardHeader>
 
