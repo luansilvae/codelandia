@@ -1,6 +1,17 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 import { FiMenu, FiX } from "react-icons/fi";
+
+const fade = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -112,6 +123,8 @@ export const MobileMenu = styled.ul`
   margin-top: 70px;
   height: calc(100vh - 70px);
   width: 100%;
+
+  animation: ${fade} 500ms;
 
   ${LinkMenu} {
     font-size: 2rem;
