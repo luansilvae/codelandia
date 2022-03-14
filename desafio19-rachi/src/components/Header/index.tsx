@@ -56,17 +56,45 @@ export const Header: React.FC = () => {
         {activeToggle && (
           <MobileMenu>
             <li>
-              <LinkMenu href="#how-it-works">Funcionalidades</LinkMenu>
+              <LinkMenu
+                href="#how-it-works"
+                onClick={() => {
+                  setActiveToggle((state) => !state);
+                }}
+              >
+                Funcionalidades
+              </LinkMenu>
             </li>
 
             <li>
-              <LinkMenu href="#app-banner">App</LinkMenu>
+              <LinkMenu
+                href="#app-banner"
+                onClick={() => {
+                  setActiveToggle((state) => !state);
+                }}
+              >
+                App
+              </LinkMenu>
             </li>
             <li>
-              <LinkMenu href="#pricing">Planos</LinkMenu>
+              <LinkMenu
+                href="#pricing"
+                onClick={() => {
+                  setActiveToggle((state) => !state);
+                }}
+              >
+                Planos
+              </LinkMenu>
             </li>
             <li>
-              <LinkMenu href="#contact">Contato</LinkMenu>
+              <LinkMenu
+                href="#contact"
+                onClick={() => {
+                  setActiveToggle((state) => !state);
+                }}
+              >
+                Contato
+              </LinkMenu>
             </li>
             <SwitchButton />
           </MobileMenu>
