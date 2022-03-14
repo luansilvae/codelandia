@@ -24,7 +24,7 @@ export const Container = styled.div`
   z-index: 99;
 
   background: var(--background);
-  box-shadow: 0px 10px 16px -4px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 16px -4px rgba(0, 0, 0, 0.1);
 `;
 
 export const HeaderWrapper = styled.div`
@@ -106,6 +106,22 @@ export const LinkMenu = styled.a`
 
     &::after {
       width: 100%;
+    }
+  }
+
+  &.active {
+    &::after {
+      display: block;
+
+      content: "";
+      width: 100%;
+      height: 2.5px;
+      background: var(--blue);
+      margin: auto;
+      position: absolute;
+      left: 0;
+
+      transition: width 0.4s;
     }
   }
 `;

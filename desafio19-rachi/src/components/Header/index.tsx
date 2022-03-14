@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 import {
   Container,
@@ -19,7 +19,12 @@ import { SwitchButton } from "../SwitchButton";
 
 export const Header: React.FC = () => {
   const [activeToggle, setActiveToggle] = useState<boolean>(false);
+  const [activeTab, setActiveTab] = useState("#");
   const { themeName } = useCustomThemeContext();
+
+  const handleActiveTab = useCallback((tab: string) => {
+    setActiveTab(tab)
+  }, [])
 
   return (
     <Container>
@@ -38,17 +43,41 @@ export const Header: React.FC = () => {
 
         <Menu activeToggle={activeToggle}>
           <li>
-            <LinkMenu href="#how-it-works">Funcionalidades</LinkMenu>
+            <LinkMenu
+              href="#how-it-works"
+              className={activeTab === "#how-it-works" ? "active" : ""}
+              onClick={() => handleActiveTab("#how-it-works")}
+            >
+              Funcionalidades
+            </LinkMenu>
           </li>
 
           <li>
-            <LinkMenu href="#app-banner">App</LinkMenu>
+            <LinkMenu
+              href="#app-banner"
+              className={activeTab === "#app-banner" ? "active" : ""}
+              onClick={() => handleActiveTab("#app-banner")}
+            >
+              App
+            </LinkMenu>
           </li>
           <li>
-            <LinkMenu href="#pricing">Planos</LinkMenu>
+            <LinkMenu
+              href="#pricing"
+              className={activeTab === "#pricing" ? "active" : ""}
+              onClick={() => handleActiveTab("#pricing")}
+            >
+              Planos
+            </LinkMenu>
           </li>
           <li>
-            <LinkMenu href="#contact">Contato</LinkMenu>
+            <LinkMenu
+              href="#contact"
+              className={activeTab === "#contact" ? "active" : ""}
+              onClick={() => handleActiveTab("#contact")}
+            >
+              Contato
+            </LinkMenu>
           </li>
           <SwitchButton />
         </Menu>
