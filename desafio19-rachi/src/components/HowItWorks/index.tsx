@@ -8,8 +8,8 @@ import { Container, GridContainer, GridItem } from "./styles";
 export const HowItWorks: React.FC = () => {
   return (
     <Container id="how-it-works">
-      <h2>Como funciona</h2>
-      <GridContainer>
+      <h2 data-aos="fade-up">Como funciona</h2>
+      <GridContainer data-aos="fade-up" data-aos-delay="200">
         <GridItem>
           <UserConnection />
           <h3>Crie conexões</h3>

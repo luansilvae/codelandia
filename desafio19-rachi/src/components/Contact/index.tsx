@@ -7,7 +7,7 @@ export const Contact: React.FC = () => {
   return (
     <Container id="contact">
       <Wrapper>
-        <ContactHeader>
+        <ContactHeader data-aos="fade-up">
           <h2>Contato</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -15,7 +15,7 @@ export const Contact: React.FC = () => {
           </p>
         </ContactHeader>
 
-        <FormContact>
+        <FormContact data-aos="fade-up" data-aos-delay="300ms">
           <InputGroup>
             <input type="text" placeholder="Seu melhor e-mail" id="email" />
             <label htmlFor="email"></label>

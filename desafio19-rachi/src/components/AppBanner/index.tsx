@@ -9,15 +9,15 @@ import {
   AppIllustration,
 } from "./styles";
 
-import PlayStore from '../../assets/img/play-store.svg'
-import AppStore from '../../assets/img/app-store.svg'
-import AppImage from '../../assets/img/app-illustration.svg'
+import PlayStore from "../../assets/img/play-store.svg";
+import AppStore from "../../assets/img/app-store.svg";
+import AppImage from "../../assets/img/app-illustration.svg";
 
 export const AppBanner: React.FC = () => {
   return (
     <Container id="app-banner">
       <Wrapper>
-        <AppContent>
+        <AppContent data-aos="fade-up">
           <h2>Baixe nosso app para desfrutar mais!</h2>
           <p>
             Amet in elementum nulla scelerisque dui, egestas at. Elit
@@ -34,7 +34,11 @@ export const AppBanner: React.FC = () => {
             </DownloadAppButton>
           </DownloadAppOptions>
         </AppContent>
-        <AppIllustration src={AppImage} alt="App Illustration" />
+        <AppIllustration
+          data-aos="fade-up"
+          src={AppImage}
+          alt="App Illustration"
+        />
       </Wrapper>
     </Container>
   );

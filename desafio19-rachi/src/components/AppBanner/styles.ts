@@ -25,6 +25,7 @@ export const AppContent = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
+  overflow: hidden;
 
   h2 {
     color: var(--textTitle);
@@ -63,6 +64,7 @@ export const DownloadAppButton = styled.a`
 export const AppIllustration = styled.img`
   max-width: 38rem;
   width: 100%;
+  overflow: hidden;
 
   @media (min-width: 768px) {
     width: 40%;
