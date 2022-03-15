@@ -10,8 +10,12 @@ export const HeroBanner: React.FC = () => {
       </h1>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis
-        ligula, accumsan nec cursus in, eleifend sit amet dui.
+        Desafios de front-end com projetos práticos da comunidade Codelândia no
+        Discord, idealizada pelo{" "}
+        <a href="https://www.iuricode.com/" target="_blank" rel="noreferrer">
+          Iuri Silva
+        </a>
+        .
       </p>
     </section>
   );
