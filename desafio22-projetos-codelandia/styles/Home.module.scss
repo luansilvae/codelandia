@@ -1,0 +1,85 @@
+.Container {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 90vw;
+    padding: 0;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 80vw;
+  }
+}
+
+.Header {
+  padding: 20px 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Menu {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    a {
+      color: var(--light);
+      padding: 15px 30px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .GithubButton {
+      font-size: 1.4rem;
+      border: none;
+      position: relative;
+
+      &:hover::after {
+        width: 65%;
+      }
+
+      &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--purple);
+        border-radius: 6px;
+
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    .CommunityButton {
+      padding: 15px 30px;
+      background-color: transparent;
+      border: solid 2px var(--purple);
+      font-size: 1.2rem;
+      border-radius: 6px;
+      transition: all  0.2s ease-in-out;
+
+      &:hover {
+        background-color: var(--purple);
+        color: #ffffff;
+      }
+    }
+  }
+}

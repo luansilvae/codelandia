@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #0E091B;
+  --dark-200: #171228;
+  --grey: #aeaeae;
+  --light: #F9f9f9;
+  --purple: #873EFF;
+  --green: #04D361;
+}
+
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+  @media (min-width: 768px) {
+    font-size: 68.75%; // +1px
+  }
+  @media (min-width: 1024px) {
+    font-size: 75%; // +1px
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--dark);
+}
+
+a {
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'IBM Plex Mono', sans-serif;
+  color: var(--light);
+}
+
+p { 
+  font-family: 'DM Sans', sans-serif;
+  color: var(--grey);
+}
