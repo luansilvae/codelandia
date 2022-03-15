@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Header } from "../components/Header";
 import { HeroBanner } from "../components/HeroBanner";
 import { ProjectList } from "../components/ProjectList";
@@ -18,6 +19,21 @@ export default function Home({ projects }: { projects: ProjectData[] }) {
         <HeroBanner />
         <ProjectList projects={projects} />
       </main>
+
+      <footer className={styles.Footer}>
+        <Image
+          src="/favicon.svg"
+          alt="Codelândia"
+          objectFit="fill"
+          width={37}
+          height={30}
+        />
+
+        <div className={styles.FooterLinks}>
+          <span>© 2022 - Luan Silva</span>
+          <span>Codelândia</span>
+        </div>
+      </footer>
     </div>
   );
 }
@@ -29,6 +45,6 @@ export async function getServerSideProps() {
   return {
     props: {
       projects,
-    }
+    },
   };
-};
+}

@@ -11,3 +11,22 @@
     max-width: 80vw;
   }
 }
+
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  .FooterLinks {
+    span {
+      color: var(--grey);
+      font-size: 1.4rem;
+      font-family: "IBM Plex Mono", sans-serif;
+
+      & + span {
+        margin-left: 20px;
+      }
+    }
+  }
+}
