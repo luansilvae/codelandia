@@ -35,6 +35,10 @@ a {
   font-family: 'DM Sans', sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
 h1, h2, h3 {
   font-family: 'IBM Plex Mono', sans-serif;
   color: var(--light);

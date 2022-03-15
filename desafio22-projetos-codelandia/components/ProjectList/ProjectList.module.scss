@@ -1,0 +1,84 @@
+.ListGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding-bottom: 6rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ListItem {
+  background: var(--dark-200);
+  padding: 1.7rem;
+  border: solid 1px var(--purple);
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+
+  .Thumb {
+    height: 18rem;
+    width: 100%;
+    position: relative;
+
+    img {
+      border-radius: 4px;
+    }
+  }
+
+  .ListContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 20px;
+
+    @media (min-width:768px) {
+      min-height: 18rem;
+    }
+
+    .ListHeader {
+      h2 {
+        font-weight: 500;
+        font-size: 2rem;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 170%;
+        margin-top: 1.5rem;
+      }
+    }
+
+    .ListLinks {
+      display: flex;
+      margin-top: 1.5rem;
+      gap: 20px;
+
+      a {
+        padding: 1rem 4rem;
+        border: solid 1px var(--green);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        border-radius: 4px;
+        background-color: var(--green);
+        color: var(--dark);
+
+        &:nth-child(2) {
+          background-color: transparent;
+          color: var(--light);
+        }
+      }
+    }
+  }
+}
