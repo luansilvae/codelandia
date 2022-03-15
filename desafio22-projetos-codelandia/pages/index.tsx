@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Header } from "../components/Header";
+import { HeroBanner } from "../components/HeroBanner";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
@@ -12,7 +13,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className={styles.Main}></main>
+      <main className={styles.Main}>
+        <HeroBanner />
+      </main>
     </div>
   );
 };
