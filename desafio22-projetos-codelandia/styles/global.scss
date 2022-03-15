@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -5,14 +7,13 @@
 }
 
 :root {
-  --dark: #0E091B;
+  --dark: #0e091b;
   --dark-200: #171228;
   --grey: #aeaeae;
-  --light: #F9f9f9;
-  --purple: #873EFF;
-  --green: #04D361;
+  --light: #f9f9f9;
+  --purple: #873eff;
+  --green: #04d361;
 }
-
 
 html {
   font-size: 62.5%; // 1rem = 10px
@@ -32,19 +33,21 @@ body {
 
 a {
   text-decoration: none;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 li {
   list-style: none;
 }
 
-h1, h2, h3 {
-  font-family: 'IBM Plex Mono', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "IBM Plex Mono", sans-serif;
   color: var(--light);
 }
 
-p { 
-  font-family: 'DM Sans', sans-serif;
+p {
+  font-family: "DM Sans", sans-serif;
   color: var(--grey);
 }

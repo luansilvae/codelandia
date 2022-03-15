@@ -1,4 +1,3 @@
-import type { GetStaticProps } from "next";
 import Head from "next/head";
 import { Header } from "../components/Header";
 import { HeroBanner } from "../components/HeroBanner";
@@ -23,14 +22,13 @@ export default function Home({ projects }: { projects: ProjectData[] }) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export async function getServerSideProps() {
   const res = await fetch(`${process.env.SERVER_URL}/api/projects`);
   const projects: ProjectData[] = await res.json();
 
   return {
     props: {
       projects,
-    },
-    revalidate: false,
+    }
   };
 };
