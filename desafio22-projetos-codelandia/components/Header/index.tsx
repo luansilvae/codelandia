@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
         >
           MEU GITHUB
         </a>
-        <a href="#" className={styles.CommunityButton}>
+        <a className={styles.CommunityButton} href="https://discord.gg/wNCWTVuxyz" target="_blank" rel="noreferrer">
           ENTRAR NA COMUNIDADE
         </a>
       </div>
