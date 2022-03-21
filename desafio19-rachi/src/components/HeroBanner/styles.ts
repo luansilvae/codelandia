@@ -30,8 +30,7 @@ export const BannerWrapper = styled.div`
   }
 
   @media (min-width: 768px) {
-    padding: 0;
-    max-width: 90%;
+    max-width: 1320px;
     flex-direction: row;
 
     img {
@@ -80,7 +79,7 @@ export const Button = styled.button`
   border-radius: 50px;
   font-weight: 500;
   font-size: 14px;
-  
+
   transition: background-color 200ms ease-out;
 
   &:hover {

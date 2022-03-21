@@ -60,8 +60,8 @@ export const InputGroup = styled.div`
     outline: none;
     position: relative;
     color: var(--white);
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
 
     ::placeholder {
       color: var(--white);

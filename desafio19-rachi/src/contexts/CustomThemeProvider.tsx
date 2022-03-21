@@ -1,16 +1,12 @@
-import { createContext, useEffect, useState } from "react";
-import { ReactNode } from "react";
-import { ThemeName, themes, ThemeType } from "../styles/theme";
-
-interface CustomThemeProps {
-  children: ReactNode;
-}
-
-interface CustomThemeContextData {
-  toggleTheme: () => void;
-  currentTheme: ThemeType;
-  themeName: ThemeName;
-}
+import {
+  createContext,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
+import { ThemeName, themes } from "../styles/theme";
+import { CustomThemeContextData, CustomThemeProps } from "./ContextProps";
 
 export const CustomThemeContext = createContext({} as CustomThemeContextData);
 
@@ -31,12 +27,15 @@ export function CustomThemeProvider(props: CustomThemeProps) {
     setCurrentTheme(themes[themeName]);
   }, [themeName]);
 
-  const toggleTheme = () => {
-    const newTheme = themeName === "light" ? "dark" : "light"
-    
+  const newTheme = useMemo(
+    () => (themeName === "light" ? "dark" : "light"),
+    [themeName]
+  );
+
+  const toggleTheme = useCallback(() => {
     setThemeName(newTheme);
     localStorage.setItem("theme", JSON.stringify(newTheme));
-  };
+  }, [newTheme]);
 
   return (
     <CustomThemeContext.Provider

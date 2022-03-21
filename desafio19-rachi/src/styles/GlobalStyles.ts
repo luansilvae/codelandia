@@ -41,6 +41,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--background);
   }
 
+  section {
+    scroll-margin-top: 70px;
+  }
+
   a {
     text-decoration: none;
   }

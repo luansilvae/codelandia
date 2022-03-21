@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 
 import {
   Container,
@@ -19,65 +19,40 @@ import { SwitchButton } from "../SwitchButton";
 
 export const Header: React.FC = () => {
   const [activeToggle, setActiveToggle] = useState<boolean>(false);
-  const [activeTab, setActiveTab] = useState("#");
+
   const { themeName } = useCustomThemeContext();
 
-  const handleActiveTab = useCallback((tab: string) => {
-    setActiveTab(tab)
-  }, [])
+  const handleActiveMenu = useCallback(
+    () => setActiveToggle((state) => !state),
+    []
+  );
+
+  const LogoImg = useMemo(
+    () => (themeName === "light" ? LogoLight : LogoDark),
+    [themeName]
+  );
 
   return (
     <Container>
       <HeaderWrapper>
-        <Logo
-          src={themeName === "light" ? LogoLight : LogoDark}
-          alt="Rachi logo"
-        />
-        <ToggleButton
-          onClick={() => {
-            setActiveToggle((state) => !state);
-          }}
-        >
+        <Logo src={LogoImg} alt="Rachi logo" />
+        <ToggleButton onClick={handleActiveMenu}>
           {activeToggle ? <CloseButton /> : <MenuButton />}
         </ToggleButton>
 
         <Menu activeToggle={activeToggle}>
           <li>
-            <LinkMenu
-              href="#how-it-works"
-              className={activeTab === "#how-it-works" ? "active" : ""}
-              onClick={() => handleActiveTab("#how-it-works")}
-            >
-              Funcionalidades
-            </LinkMenu>
+            <LinkMenu href="#how-it-works">Funcionalidades</LinkMenu>
           </li>
 
           <li>
-            <LinkMenu
-              href="#app-banner"
-              className={activeTab === "#app-banner" ? "active" : ""}
-              onClick={() => handleActiveTab("#app-banner")}
-            >
-              App
-            </LinkMenu>
+            <LinkMenu href="#app-banner">App</LinkMenu>
           </li>
           <li>
-            <LinkMenu
-              href="#pricing"
-              className={activeTab === "#pricing" ? "active" : ""}
-              onClick={() => handleActiveTab("#pricing")}
-            >
-              Planos
-            </LinkMenu>
+            <LinkMenu href="#pricing">Planos</LinkMenu>
           </li>
           <li>
-            <LinkMenu
-              href="#contact"
-              className={activeTab === "#contact" ? "active" : ""}
-              onClick={() => handleActiveTab("#contact")}
-            >
-              Contato
-            </LinkMenu>
+            <LinkMenu href="#contact">Contato</LinkMenu>
           </li>
           <SwitchButton />
         </Menu>
@@ -85,43 +60,23 @@ export const Header: React.FC = () => {
         {activeToggle && (
           <MobileMenu>
             <li>
-              <LinkMenu
-                href="#how-it-works"
-                onClick={() => {
-                  setActiveToggle((state) => !state);
-                }}
-              >
+              <LinkMenu href="#how-it-works" onClick={handleActiveMenu}>
                 Funcionalidades
               </LinkMenu>
             </li>
 
             <li>
-              <LinkMenu
-                href="#app-banner"
-                onClick={() => {
-                  setActiveToggle((state) => !state);
-                }}
-              >
+              <LinkMenu href="#app-banner" onClick={handleActiveMenu}>
                 App
               </LinkMenu>
             </li>
             <li>
-              <LinkMenu
-                href="#pricing"
-                onClick={() => {
-                  setActiveToggle((state) => !state);
-                }}
-              >
+              <LinkMenu href="#pricing" onClick={handleActiveMenu}>
                 Planos
               </LinkMenu>
             </li>
             <li>
-              <LinkMenu
-                href="#contact"
-                onClick={() => {
-                  setActiveToggle((state) => !state);
-                }}
-              >
+              <LinkMenu href="#contact" onClick={handleActiveMenu}>
                 Contato
               </LinkMenu>
             </li>

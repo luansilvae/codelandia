@@ -12,7 +12,6 @@ import { Footer } from "../../components/Footer";
 export const Main: React.FC = () => {
   return (
     <Container>
-      <Header />
       <HeroBanner />
       <HowItWorks />
       <AppBanner />

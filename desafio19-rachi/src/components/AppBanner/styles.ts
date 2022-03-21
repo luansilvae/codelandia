@@ -14,9 +14,9 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
+
   @media (min-width: 768px) {
-    max-width: 90vw;
-    padding: 0;
+    max-width: 1320px;
     flex-direction: row;
   }
 `;

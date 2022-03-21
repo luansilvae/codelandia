@@ -7,6 +7,7 @@ import { Main } from "./pages/Main";
 import { GlobalStyles } from "./styles/GlobalStyles";
 
 import "aos/dist/aos.css";
+import { Header } from "./components/Header";
 
 function App() {
   const { currentTheme } = useCustomThemeContext();
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <ThemeProvider theme={currentTheme}>
+      <Header />
       <BrowserRouter>
         <GlobalStyles />
         <Routes>

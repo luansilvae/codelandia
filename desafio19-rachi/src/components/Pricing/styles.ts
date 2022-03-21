@@ -9,9 +9,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
-    padding: 0;
+    max-width: 1320px;
   }
 `;
 
@@ -83,13 +84,6 @@ export const PricingCard = styled.div`
     color: var(--textSubtitle);
     font-size: 1.6rem;
     max-width: 80%;
-  }
-
-  transition: min-height 300ms ease-out;
-
-  &:hover {
-    transition: min-height 300ms ease-in;
-    min-height: 47rem;
   }
 
   &.highlightedCard {

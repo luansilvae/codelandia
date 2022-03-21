@@ -5,19 +5,17 @@ import styled from "styled-components";
 export const SwitchButton: React.FC = () => {
   const { themeName, toggleTheme } = useCustomThemeContext();
   return (
-    <div>
-      <CheckBoxWrapper>
-        <CheckBox
-          id="checkbox"
-          type="checkbox"
-          onChange={toggleTheme}
-          checked={themeName === "dark"}
-          title="Toggle theme"
-          aria-label="Toggle theme"
-        />
-        <CheckBoxLabel htmlFor="checkbox" />
-      </CheckBoxWrapper>
-    </div>
+    <CheckBoxWrapper>
+      <CheckBox
+        id="checkbox"
+        type="checkbox"
+        onChange={toggleTheme}
+        checked={themeName === "dark"}
+        title="Toggle theme"
+        aria-label="Toggle theme"
+      />
+      <CheckBoxLabel htmlFor="checkbox" />
+    </CheckBoxWrapper>
   );
 };
 

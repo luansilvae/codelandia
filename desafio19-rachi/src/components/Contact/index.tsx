@@ -1,7 +1,13 @@
 import React from "react";
 import { Button } from "../HeroBanner/styles";
 
-import { Container, Wrapper, FormContact, ContactHeader, InputGroup } from "./styles";
+import {
+  Container,
+  Wrapper,
+  FormContact,
+  ContactHeader,
+  InputGroup,
+} from "./styles";
 
 export const Contact: React.FC = () => {
   return (
@@ -15,7 +21,7 @@ export const Contact: React.FC = () => {
           </p>
         </ContactHeader>
 
-        <FormContact data-aos="fade-up" data-aos-delay="300ms">
+        <FormContact data-aos="zoom-in" data-aos-delay="300ms">
           <InputGroup>
             <input type="text" placeholder="Seu melhor e-mail" id="email" />
             <label htmlFor="email"></label>

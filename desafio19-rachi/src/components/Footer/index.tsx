@@ -1,14 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export const Footer: React.FC = () => {
   return (
     <Container>
-      <span>Desenvolvido por <a href="https://github.com/luansilvae" target="_blank">Luan Silva</a></span>
+      <span>
+        Desenvolvido por{" "}
+        <a href="https://github.com/luansilvae" target="_blank">
+          Luan Silva
+        </a>
+      </span>
     </Container>
   );
-}
-
+};
 
 const Container = styled.footer`
   background: var(--background);
@@ -23,7 +27,6 @@ const Container = styled.footer`
       font-weight: 700;
       color: var(--blue);
       position: relative;
-      
 
       :hover {
         cursor: pointer;
@@ -44,4 +47,4 @@ const Container = styled.footer`
       }
     }
   }
-`
+`;

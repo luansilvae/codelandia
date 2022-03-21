@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   padding: 50px 0;
 
   h2 {
@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const GridContainer = styled.div`
-  padding: 50px 0;
+  padding-top: 50px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -20,7 +20,7 @@ export const GridContainer = styled.div`
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 90vw;
+    max-width: 1280px;
   }
 
   @media (min-width: 1024px) {

@@ -19,7 +19,7 @@ export const Container = styled.div`
   max-width: 100vw;
   width: 100%;
   height: 70px;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 99;
 
@@ -34,11 +34,10 @@ export const HeaderWrapper = styled.div`
   width: 100%;
 
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px;  
 
   @media (min-width: 768px) {
-    max-width: 90vw;
-    padding: 0;
+    max-width: 1320px;
   }
 `;
 
