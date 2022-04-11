@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
+}
+
+:root {
+  --primary: #1D1D1D;
+  --secondary: #EC111A;
+  --white: #F9F9F9;
+
+  --background: rgba(29, 29, 29, 0.5);
+  --blur: blur(2px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
