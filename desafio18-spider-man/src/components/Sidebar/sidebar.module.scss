@@ -7,6 +7,11 @@
   height: 100%;
   background: var(--background);
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+
   &::before {
     content: '';
     position: absolute;
@@ -24,30 +29,6 @@
     align-items: center;
     height: 100%;
     filter: blur(0);
-
-    > .userAvatar {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      position: relative;
-
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-      }
-
-      > .status {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #0ACF83;
-        border: solid 1px var(--white);
-      }
-    }
 
     > .socials {
       margin-top: 108px;

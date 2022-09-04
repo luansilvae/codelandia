@@ -1,3 +1,5 @@
+@import '../../styles/medias.scss';
+
 .headerContainer {
   width: calc(100vw - 100px);
   height: 100px;
@@ -9,6 +11,16 @@
   position: fixed;
   top: 0;
   right: 0;
+
+  transition: all 200ms ease-in-out;
+
+  &.menuOpen {
+    background: var(--menu);
+  }
+
+  @include mobile {
+    width: 100%;
+  }
 
   &::before{
       content: "";
@@ -30,9 +42,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+
+    @include desktop {
+      .userAvatar {
+        display: none;
+      }
+
+      .menuButton {
+        pointer-events: none;
+      }
+    }
+
+    @include mobile {
+      padding: 0 20px;
+    }
 
     a:nth-child(2) {
       margin-left: 170px;
+
+      @include mobile {
+        margin: 0;
+      }
     }
 
     > .menu {
@@ -40,6 +71,40 @@
       gap: 58px;
       font-size: 20px;
       color: var(--white);
+
+      @include desktop {
+        padding-right: 20px;
+      }
+
+      @include mobile {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100vw;
+        flex-direction: column;
+        z-index: 200;
+        height: calc(100vh - 100px);
+        background: var(--menu);
+
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(30%);
+        transition: all 200ms ease-in-out;
+
+        li {
+          font-weight: 800;
+        }
+
+        &.menuOpen {
+          transform: translateY(0%);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
     }
   }
 }
